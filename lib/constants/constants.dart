@@ -6,6 +6,9 @@ const kBackgroundColor2 = Color.fromRGBO(17, 26, 32, 1);
 const kPrimaryTextColor = Color.fromRGBO(130, 249, 161, 1);
 const kNavbarLinkColor = Color.fromRGBO(236, 248, 255, 1);
 
+const kButtonBackground = Color.fromRGBO(28, 44, 53, 1);
+const kButtonBorderColor = Color.fromRGBO(124, 201, 255, 0.41);
+
 final BoxDecoration boxDecorationGradient = BoxDecoration(
   gradient: LinearGradient(
     begin: Alignment.topCenter,
