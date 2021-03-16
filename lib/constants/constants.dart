@@ -26,3 +26,7 @@ const String kHeadingText2 =
     "I take ideas from design to deployment, and everything in between.";
 
 const String kName = "Rupak Karki";
+
+// generate random colors
+final String kprojectDescription =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Justo, a gravida pulvinar lacus, ut feugiat. Odio quam  curabitur rhoncus dis.";
