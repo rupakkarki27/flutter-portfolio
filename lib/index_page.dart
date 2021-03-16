@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/contact_section.dart';
+import 'package:portfolio/components/footer_section.dart';
 import 'package:portfolio/components/intro_text.dart';
 import 'package:portfolio/components/navbar.dart';
 import 'package:portfolio/components/project_section.dart';
@@ -12,8 +14,6 @@ class IndexPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.only(
-            left: 120,
-            right: 120,
             top: 20,
           ),
           decoration: boxDecorationGradient,
@@ -30,6 +30,8 @@ class IndexPage extends StatelessWidget {
                 height: 20,
               ),
               ProjectSection(),
+              ContactSection(),
+              FooterSection(),
             ],
           ),
         ),

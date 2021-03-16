@@ -7,14 +7,20 @@ class Navbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       type: MaterialType.transparency,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          _navHome(),
-          Row(
-            children: _navLinks(),
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.only(
+          left: 120,
+          right: 120,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            _navHome(),
+            Row(
+              children: _navLinks(),
+            )
+          ],
+        ),
       ),
     );
   }

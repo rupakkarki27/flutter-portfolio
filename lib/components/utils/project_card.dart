@@ -35,7 +35,7 @@ class ProjectCard extends StatelessWidget {
             left: 40.0,
             right: 15.0,
           ),
-          height: 240.0,
+          height: 230.0,
           width: cardWidth,
           decoration: BoxDecoration(
             color: kButtonBackground,

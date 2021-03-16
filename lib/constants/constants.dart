@@ -8,6 +8,8 @@ const kNavbarLinkColor = Color.fromRGBO(236, 248, 255, 1);
 
 const kButtonBackground = Color.fromRGBO(28, 44, 53, 1);
 const kButtonBorderColor = Color.fromRGBO(124, 201, 255, 0.41);
+const kChatButtonColor = Color.fromRGBO(131, 249, 162, 1);
+const kFooterTextColor = Color.fromRGBO(184, 193, 199, 1);
 
 final BoxDecoration boxDecorationGradient = BoxDecoration(
   gradient: LinearGradient(
@@ -30,3 +32,9 @@ const String kName = "Rupak Karki";
 // generate random colors
 final String kprojectDescription =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Justo, a gravida pulvinar lacus, ut feugiat. Odio quam  curabitur rhoncus dis.";
+
+final String kContactText1 = "What are you working on?";
+final String kContactText2 =
+    "Let's have a conversation! \nI'd love to hear what you're working on and find a way to work together.";
+
+final String kFooterText1 = "Developed by Rupak Karki.\nPowered by Flutter.";

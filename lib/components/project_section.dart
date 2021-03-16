@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/utils/project_card.dart';
 import 'package:portfolio/constants/constants.dart';
