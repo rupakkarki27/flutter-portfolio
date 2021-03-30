@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/utils/chat_button.dart';
+
+import 'package:portfolio/components/utils/social_contacts.dart';
 import 'package:portfolio/constants/constants.dart';
 
 class ContactSection extends StatelessWidget {
@@ -32,7 +33,7 @@ class ContactSection extends StatelessWidget {
               color: kNavbarLinkColor,
             ),
           ),
-          ChatButton(),
+          SocialContacts(),
         ],
       ),
     );

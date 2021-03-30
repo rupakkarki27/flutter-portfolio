@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/utils/footer_icons.dart';
 import 'package:portfolio/components/utils/footer_text.dart';
+import 'package:portfolio/constants/constants.dart';
 
 class FooterSection extends StatelessWidget {
   @override
@@ -20,7 +20,22 @@ class FooterSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               FooterText(),
-              FooterIcons(),
+              Column(
+                children: [
+                  Text(
+                    "rupakkarki123@gmail.com",
+                    style: TextStyle(
+                      color: kFooterTextColor,
+                    ),
+                  ),
+                  Text(
+                    "rupak@rupakkarki.com.np",
+                    style: TextStyle(
+                      color: kFooterTextColor,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

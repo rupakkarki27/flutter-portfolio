@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/contact_section.dart';
-import 'package:portfolio/components/footer_section.dart';
-import 'package:portfolio/components/intro_text.dart';
-import 'package:portfolio/components/navbar.dart';
-import 'package:portfolio/components/project_section.dart';
-import 'package:portfolio/components/skills.dart';
+import 'package:portfolio/components/index/contact_section.dart';
+import 'package:portfolio/components/index/footer_section.dart';
+import 'package:portfolio/components/index/intro_text.dart';
+import 'package:portfolio/components/utils/navbar.dart';
+import 'package:portfolio/components/index/project_section.dart';
+import 'package:portfolio/components/index/skills.dart';
 import 'package:portfolio/constants/constants.dart';
 
 class IndexPage extends StatelessWidget {

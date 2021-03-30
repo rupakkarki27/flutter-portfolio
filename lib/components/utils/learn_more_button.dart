@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
 
 class LearnMoreButton extends StatelessWidget {
+  final VoidCallback callback;
+
+  LearnMoreButton({this.callback});
+
   @override
   Widget build(BuildContext context) {
     return Material(
       type: MaterialType.transparency,
       child: GestureDetector(
-        onTap: () {
-          print("Learn More");
-        },
+        onTap: callback,
         child: Container(
           height: 40,
           width: 110,

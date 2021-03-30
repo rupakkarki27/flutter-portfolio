@@ -29,11 +29,16 @@ const String kHeadingText2 =
 
 const String kName = "Rupak Karki";
 
-// generate random colors
-final String kprojectDescription =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Justo, a gravida pulvinar lacus, ut feugiat. Odio quam  curabitur rhoncus dis.";
+final String descriptionCovidDash =
+    "A dashboard application that shows the statistics of Covid-19 according to country. Uses external API calls to retrive the data. Powered by Flutter.";
+final String descriptionPortfolio =
+    "Personal portfolio site built entirely in Flutter. You're on it right now. Responsive and beautiful.";
+final String descriptionVerbose =
+    "A writing application where you can unleash your creativity and share amazing things with everyone. Backend and Frontend all built by me. COMING SOON";
+final String descriptionObjectDetector =
+    "An application capable of detecting objects using the phone's camera. Built using Flutter and Tensorflow. Capable of detecting objects live.";
 
-final String kContactText1 = "What are you working on?";
+final String kContactText1 = "Got interesting ideas?";
 final String kContactText2 =
     "Let's have a conversation! \nI'd love to hear what you're working on and find a way to work together.";
 

@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:portfolio/callbacks/learn_more_callback.dart';
 import 'package:portfolio/components/utils/project_card.dart';
 import 'package:portfolio/constants/constants.dart';
 
@@ -27,9 +28,10 @@ class ProjectSection extends StatelessWidget {
           ProjectCard(
             cardWidth: 700,
             projectName: "CovidDash",
-            projectDescription: kprojectDescription,
+            projectDescription: descriptionCovidDash,
             sideBorderColor:
                 Colors.primaries[Random().nextInt(Colors.primaries.length)],
+            callback: covidDashCallback,
           ),
           SizedBox(
             height: 8.0,
@@ -40,9 +42,10 @@ class ProjectSection extends StatelessWidget {
               ProjectCard(
                 cardWidth: 345,
                 projectName: "rupakkarki.com.np",
-                projectDescription: kprojectDescription,
+                projectDescription: descriptionPortfolio,
                 sideBorderColor:
                     Colors.primaries[Random().nextInt(Colors.primaries.length)],
+                callback: portfolioCallback,
               ),
               SizedBox(
                 width: 8.0,
@@ -50,9 +53,10 @@ class ProjectSection extends StatelessWidget {
               ProjectCard(
                 cardWidth: 345,
                 projectName: "Verbose.",
-                projectDescription: kprojectDescription,
+                projectDescription: descriptionVerbose,
                 sideBorderColor:
                     Colors.primaries[Random().nextInt(Colors.primaries.length)],
+                callback: verboseCallback,
               ),
             ],
           ),
@@ -61,10 +65,11 @@ class ProjectSection extends StatelessWidget {
           ),
           ProjectCard(
             cardWidth: 700,
-            projectName: "CovidDash",
-            projectDescription: kprojectDescription,
+            projectName: "Object Detector",
+            projectDescription: descriptionObjectDetector,
             sideBorderColor:
                 Colors.primaries[Random().nextInt(Colors.primaries.length)],
+            callback: objectDetectorCallback,
           ),
           SizedBox(
             height: 20.0,

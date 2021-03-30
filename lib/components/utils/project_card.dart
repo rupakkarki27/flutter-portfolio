@@ -12,11 +12,14 @@ class ProjectCard extends StatelessWidget {
   @required
   final Color sideBorderColor;
 
+  final VoidCallback callback;
+
   ProjectCard({
     this.projectName,
     this.projectDescription,
     this.cardWidth,
     this.sideBorderColor,
+    this.callback,
   });
   @override
   Widget build(BuildContext context) {
@@ -66,7 +69,9 @@ class ProjectCard extends StatelessWidget {
                   fontSize: 14.0,
                 ),
               ),
-              LearnMoreButton(),
+              LearnMoreButton(
+                callback: callback,
+              ),
             ],
           ),
         ),

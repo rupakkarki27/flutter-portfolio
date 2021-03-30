@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'index_page.dart';
+import 'screens/index_page.dart';
 
 // Entrypoint of the application
 void main() => runApp(
