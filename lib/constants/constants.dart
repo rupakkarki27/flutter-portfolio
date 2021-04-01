@@ -10,6 +10,7 @@ const kButtonBackground = Color.fromRGBO(28, 44, 53, 1);
 const kButtonBorderColor = Color.fromRGBO(124, 201, 255, 0.41);
 const kChatButtonColor = Color.fromRGBO(131, 249, 162, 1);
 const kFooterTextColor = Color.fromRGBO(184, 193, 199, 1);
+const kArticleDateColor = Color.fromRGBO(122, 182, 217, 1);
 
 final BoxDecoration boxDecorationGradient = BoxDecoration(
   gradient: LinearGradient(
