@@ -6,6 +6,8 @@ import 'package:portfolio/responsive.dart';
 class IntroText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Changing the fontsize w.r.t the screen size
+    // for better look and responsiveness
     final double fontSizeMain =
         (Responsive.isDesktop(context) || Responsive.isTablet(context))
             ? 40.0

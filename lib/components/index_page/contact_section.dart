@@ -7,6 +7,7 @@ import 'package:portfolio/responsive.dart';
 class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // change font size depending on screen size
     final double _fontSize =
         Responsive.isDesktop(context) || Responsive.isTablet(context)
             ? 40.0

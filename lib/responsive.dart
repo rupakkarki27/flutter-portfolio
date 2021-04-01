@@ -12,6 +12,9 @@ class Responsive extends StatelessWidget {
     this.desktop,
   }) : super(key: key);
 
+  // These boolean methods will help us decide on which
+  // widgets to use depending on the size of the screen
+
   static bool isMobile(BuildContext context) =>
       MediaQuery.of(context).size.width < 650;
 
@@ -23,6 +26,9 @@ class Responsive extends StatelessWidget {
       MediaQuery.of(context).size.width > 1100;
   @override
   Widget build(BuildContext context) {
+    // The layout builder is used to build the required
+    // layout depending on the size of the screen
+
     return LayoutBuilder(builder: (context, constraints) {
       if (isDesktop(context)) {
         return desktop;

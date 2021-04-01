@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Skills extends StatelessWidget {
+  // define the root of the assets to dynamically
+  // generate the full path
   final String _rootPath = "assets/skills/";
 
   final _iconNames = [
@@ -26,8 +28,14 @@ class Skills extends StatelessWidget {
     );
   }
 
+// Returns a list of Image widgets built using the paths dynamically
+// with the use of the `map` function
+// Using regular png images because websafe_svg package had some issues
   List<Widget> _skillsList() {
     return _iconNames.map((iconName) {
+      // for each item in the list, join the root directory and the name
+      // to form the full path to that asset.
+      // Finally convert to list to insert into the Row widget.
       String assetName = _rootPath + iconName;
       return Padding(
         padding: EdgeInsets.only(

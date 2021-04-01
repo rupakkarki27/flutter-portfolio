@@ -14,6 +14,8 @@ class ProjectSection extends StatelessWidget {
         children: <Widget>[
           Container(
             width: 700,
+            // Using manual approach to display the projects text in either
+            // center or left aligned w.r.t screen size
             child:
                 (Responsive.isDesktop(context) || Responsive.isTablet(context))
                     ? Text(
@@ -39,6 +41,7 @@ class ProjectSection extends StatelessWidget {
             height: 15.0,
           ),
           ProjectCard(
+            // change the card width depending on the screen type
             cardWidth:
                 (Responsive.isDesktop(context) || Responsive.isTablet(context))
                     ? 700
@@ -52,6 +55,8 @@ class ProjectSection extends StatelessWidget {
           SizedBox(
             height: 8.0,
           ),
+          // Used wrap instead of the Row widget, so that the items will automatically
+          // wrap to the next line without causing render overflow
           Wrap(
             direction:
                 (Responsive.isDesktop(context) || Responsive.isTablet(context))

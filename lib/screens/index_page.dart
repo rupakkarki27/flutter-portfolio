@@ -13,7 +13,11 @@ class IndexPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        // The Responsive widget is custom defined using the Layout Builder
+        // We pass the required widgets on all the three screen parameters
+        // and it takes care of building the necessary widgets for us.
         child: Responsive(
+          //  Mobile Screen
           mobile: Container(
             color: kBackgroundColor2,
             child: Column(
@@ -30,6 +34,7 @@ class IndexPage extends StatelessWidget {
               ],
             ),
           ),
+          // Tablet Screen
           tablet: Container(
             color: kBackgroundColor2,
             child: Column(
@@ -50,6 +55,7 @@ class IndexPage extends StatelessWidget {
               ],
             ),
           ),
+          // Desktop Screen
           desktop: Container(
             color: kBackgroundColor2,
             child: Column(

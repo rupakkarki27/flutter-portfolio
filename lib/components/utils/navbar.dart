@@ -70,7 +70,12 @@ class Navbar extends StatelessWidget {
     );
   }
 
+// For the Rupak Karki text on the Navbar
   Widget _navHome(context) {
+    final double fontSize =
+        (Responsive.isDesktop(context) || Responsive.isTablet(context))
+            ? 25.0
+            : 20.0;
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -85,7 +90,7 @@ class Navbar extends StatelessWidget {
         style: TextStyle(
           color: kPrimaryTextColor,
           fontWeight: FontWeight.bold,
-          fontSize: 25,
+          fontSize: fontSize,
         ),
       ),
     );
