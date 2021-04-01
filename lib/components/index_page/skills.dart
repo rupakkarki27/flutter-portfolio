@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:websafe_svg/websafe_svg.dart';
 
 class Skills extends StatelessWidget {
   final String _rootPath = "assets/skills/";
@@ -37,9 +37,8 @@ class Skills extends StatelessWidget {
           left: 25.0,
           bottom: 25.0,
         ),
-        child: SvgPicture.asset(
+        child: WebsafeSvg.asset(
           assetName,
-          semanticsLabel: iconName,
           height: 50,
           width: 50,
         ),
