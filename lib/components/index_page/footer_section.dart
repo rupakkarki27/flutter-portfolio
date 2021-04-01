@@ -15,11 +15,12 @@ class FooterSection extends StatelessWidget {
         ),
         child: Container(
           height: 100,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          child: Wrap(
             children: [
               FooterText(),
+              Spacer(
+                flex: 1,
+              ),
               Column(
                 children: [
                   Text(

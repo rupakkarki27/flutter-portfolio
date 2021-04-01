@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/callbacks/learn_more_callback.dart';
 import 'package:portfolio/components/utils/project_card.dart';
 import 'package:portfolio/constants/constants.dart';
+import 'package:portfolio/responsive.dart';
 
 class ProjectSection extends StatelessWidget {
   @override
@@ -13,20 +14,35 @@ class ProjectSection extends StatelessWidget {
         children: <Widget>[
           Container(
             width: 700,
-            child: Text(
-              "Projects",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
+            child:
+                (Responsive.isDesktop(context) || Responsive.isTablet(context))
+                    ? Text(
+                        "Projects",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      )
+                    : Center(
+                        child: Text(
+                          "Projects",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
           ),
           SizedBox(
             height: 15.0,
           ),
           ProjectCard(
-            cardWidth: 700,
+            cardWidth:
+                (Responsive.isDesktop(context) || Responsive.isTablet(context))
+                    ? 700
+                    : 350,
             projectName: "CovidDash",
             projectDescription: descriptionCovidDash,
             sideBorderColor:
@@ -36,22 +52,23 @@ class ProjectSection extends StatelessWidget {
           SizedBox(
             height: 8.0,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            direction:
+                (Responsive.isDesktop(context) || Responsive.isTablet(context))
+                    ? Axis.horizontal
+                    : Axis.vertical,
             children: [
               ProjectCard(
-                cardWidth: 345,
+                cardWidth: 346,
                 projectName: "rupakkarki.com.np",
                 projectDescription: descriptionPortfolio,
                 sideBorderColor:
                     Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 callback: portfolioCallback,
               ),
-              SizedBox(
-                width: 8.0,
-              ),
+              SizedBox(width: 8.0, height: 8.0),
               ProjectCard(
-                cardWidth: 345,
+                cardWidth: 346,
                 projectName: "Verbose.",
                 projectDescription: descriptionVerbose,
                 sideBorderColor:
@@ -64,7 +81,10 @@ class ProjectSection extends StatelessWidget {
             height: 8.0,
           ),
           ProjectCard(
-            cardWidth: 700,
+            cardWidth:
+                (Responsive.isDesktop(context) || Responsive.isTablet(context))
+                    ? 700
+                    : 350,
             projectName: "Object Detector",
             projectDescription: descriptionObjectDetector,
             sideBorderColor:

@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 
 import 'package:portfolio/components/utils/social_contacts.dart';
 import 'package:portfolio/constants/constants.dart';
+import 'package:portfolio/responsive.dart';
 
 class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final double _fontSize =
+        Responsive.isDesktop(context) || Responsive.isTablet(context)
+            ? 40.0
+            : 30.0;
     return Container(
       margin: EdgeInsets.only(
         top: 45,
@@ -22,7 +27,7 @@ class ContactSection extends StatelessWidget {
             kContactText1,
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 40.0,
+              fontSize: _fontSize,
               color: kPrimaryTextColor,
             ),
           ),

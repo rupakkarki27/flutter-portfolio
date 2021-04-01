@@ -15,15 +15,40 @@ class IndexPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Responsive(
           mobile: Container(
-            height: MediaQuery.of(context).size.height,
-            color: Colors.black,
-            child: Center(
-              child: Text("Mobile"),
+            color: kBackgroundColor2,
+            child: Column(
+              children: <Widget>[
+                Navbar(),
+                IntroText(),
+                SizedBox(height: 20),
+                Skills(),
+                SizedBox(height: 30),
+                SizedBox(height: 20),
+                ProjectSection(),
+                ContactSection(),
+                FooterSection(),
+              ],
             ),
           ),
           tablet: Container(
-            height: MediaQuery.of(context).size.height,
-            color: Colors.blue,
+            color: kBackgroundColor2,
+            child: Column(
+              children: <Widget>[
+                Navbar(),
+                IntroText(),
+                SizedBox(height: 20),
+                Skills(),
+                SizedBox(
+                  height: 30,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                ProjectSection(),
+                ContactSection(),
+                FooterSection(),
+              ],
+            ),
           ),
           desktop: Container(
             color: kBackgroundColor2,
